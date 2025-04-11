@@ -28,6 +28,7 @@
           name = "rust-hello-debug-1.0";
           inherit system;
           nativeBuildInputs = [ pkgs.cargo ];
+          meta.mainProgram = "rust-hello";
           buildPhase = ''
             cargo build
           '';
